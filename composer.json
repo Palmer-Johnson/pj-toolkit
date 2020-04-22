@@ -1,0 +1,39 @@
+{
+    "name": "palmerjohnson/pj-toolkit",
+    "description": "Tools shared across PJ Power's Craft properties",
+    "type": "craft-plugin",
+    "version": "1.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "pj toolkit"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Astuteo",
+            "homepage": "https://astuteo.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.4.0",
+        "solspace/craft-freeform":"^3.6.1",
+        "ramsey/uuid": "^4.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+          "palmerjohnson\\pjtoolkit\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "PJ Toolkit",
+        "handle": "pj-toolkit",
+        "developer": "Astuteo",
+        "components": {
+            "ga": "palmerjohnson\\pjtoolkit\\services\\Ga"
+        },
+        "class": "palmerjohnson\\pjtoolkit\\PjToolkit"
+    }
+}
